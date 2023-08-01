@@ -4,13 +4,13 @@
 
 }
 
- game {
+ #game {
     width: 400px;
     height: 500px;
     border: 1px solid black;
     margin: auto;
 }
-character{
+#character{
     width: 20px;
     height: 20px;
     background-color: blue;
@@ -19,7 +19,7 @@ character{
     top: 440px;
     left: 190px;
     z-index: 1000000;
-    
+
 }
 
 
