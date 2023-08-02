@@ -73,4 +73,32 @@ var blocks = setInterval (function(){
         clearInterval(blocks);
         location.reload();
     }
-
+    for(var i=0; i < currentBlocks.length; i++){
+        let current = currentBlocks[i];
+        let iblock = document.getElementById("block"+current);
+        let ihole = document.getElementById("hole"+current);
+        let iblockTop = parseFloat(window.getComputedStyle(iblock).getPropertyValue("top"));
+        let iholeLeft = parseFloat(window.getComputedStyle(ihole).getPropertyValue("left"));
+        iblock.style.top = iblockTop - 0.5 + "px";
+        ihole.style.top = iblockTop - 0.5 + "px";
+        if(iblockTop < -20){
+            currentBlocks.shift();
+            iblock.remove();
+            ihole.remove();
+        }
+    
+        if(iblockTop-20<characterTop && iblockTop>characterTop){
+            drop++;
+            if(iholeLeft<=characterLeft && iholeLeft+20>=characterLeft){
+                drop = 0;
+            }
+        }
+    }
+    if(drop==0){
+        if(characterTop < 480){
+            character.style.top = characterTop + 2 + "px";
+        }
+    }else{
+        character.style.top = characterTop - 0.5 + "px";
+    }
+},1);
