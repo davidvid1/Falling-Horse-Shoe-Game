@@ -1,7 +1,14 @@
 *{
     padding: 0
     ;
-    margin: 0;background-color: red;
+    margin: 0;
+    background-image: url("https://iadsb.tmgrup.com.tr/3cbfb5/1200/627/0/155/1215/789?u=https://idsb.tmgrup.com.tr/2019/04/14/superstitions-busted-hanging-a-horseshoe-for-good-luck-1555269923390.jpg");
+    
+    
+    background-color: rgb(17, 16, 16);
+    
+
+
 
 
 }
@@ -9,7 +16,7 @@
  #game {
     width: 600px;
     height: 600px;
-    border: 10px solid blue;
+    border: 5px solid blue;
     margin: auto;
     overflow: hidden;
     background-color: green;
@@ -22,7 +29,7 @@
     border-radius: 50px;
     position: relative;
     top: 440px;
-    left: 190px;
+    left: 250px;
     z-index: 1000000;
 
 }
