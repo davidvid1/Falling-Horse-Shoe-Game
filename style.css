@@ -2,7 +2,7 @@ body{
     padding: 0
     ;
     margin: 0;
-  background-image: url("https://iadsb.tmgrup.com.tr/3cbfb5/1200/627/0/155/1215/789?u=https://idsb.tmgrup.com.tr/2019/04/14/superstitions-busted-hanging-a-horseshoe-for-good-luck-1555269923390.jpg");
+  background-image: url("https://iadsb.tmgrup.com.tr/3cbfb5/1200/627/0/155/1215/789?u=https://idsb.tmgrup.com.tr/2019/04/14/superstitions-busted-hanging-a-horseshoe-for-good-luck-1555269923390.jpg"); alt: "horse shoe back ground image";
     
     
     background-color: rgb(17, 16, 16);
@@ -16,16 +16,21 @@ body{
  #game {
     width: 600px;
     height: 600px;
-    border: 5px solid blue;
+    border: 8px solid orange;
     margin: auto;
     overflow: hidden;
-    background-color: green;
+    background-color: #1D4F06;
 }
 
-#character{
+
+
+
+
+
+#character  {
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: 	#5C4033;
     border-radius: 50px;
     position: relative;
     top: 440px;
@@ -46,7 +51,7 @@ body{
 .hole{
     width: 20px;
     height: 20px;
-    background-color: green;
+    background-color: #1D4F06;
     position: relative;
     top: 100px;
     margin-top: -20px;
